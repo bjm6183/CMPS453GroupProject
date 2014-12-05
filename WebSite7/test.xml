@@ -1,0 +1,46 @@
+<root>
+  <job>
+    <Name>job name</Name>
+    <summary>summary</summary>
+    <jobs_avail>jobs avail</jobs_avail>
+    <job_area_dist>
+      <place>
+        <placenum>number</placenum>
+        <placename>place name</placename>
+      </place>
+      <place>
+        <placenum>number</placenum>
+        <placename>place name</placename>
+      </place>
+      <place>
+        <placenum>number</placenum>
+        <placename>place name</placename>
+      </place>
+    </job_area_dist>
+    <ntnl_supply_demand>text</ntnl_supply_demand>
+    <edu_req>text</edu_req>
+    <work_exp>text</work_exp>
+  </job>
+  <job>
+    <Name>job name</Name>
+    <summary>summary</summary>
+    <jobs_avail>jobs avail</jobs_avail>
+    <job_area_dist>
+      <place>
+        <placenum>number</placenum>
+        <placename>place name</placename>
+      </place>
+      <place>
+        <placenum>number</placenum>
+        <placename>place name</placename>
+      </place>
+      <place>
+        <placenum>number</placenum>
+        <placename>place name</placename>
+      </place>
+    </job_area_dist>
+    <ntnl_supply_demand>text</ntnl_supply_demand>
+    <edu_req>text</edu_req>
+    <work_exp>text</work_exp>
+  </job> 
+</root>
