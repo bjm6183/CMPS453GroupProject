@@ -8,18 +8,12 @@
         text-decoration: none;
     }
     a:hover{
-        
+        background-color: rgb(72, 168, 66);
+        border-radius:25px;
         color:#fff;
         text-decoration: none;
     }
-        .image:hover
-        {
-        position:absolute;
-        left: 1;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background: url("/Images/linkselet.png");
-        }
+
     </style>
     <section class="featured">
         <div class="content-wrapper">
@@ -39,19 +33,19 @@
     <h2>Age Catagories:</h2>
     <ol class="round">
         <li class="zero">
-            <h3><a class="image" runat="server" href="~/Children.aspx">Children (Ages 6-12)</a></h3>
+           <h3><a runat="server" href="~/Children.aspx">&nbsp Children (Ages 6-12) &nbsp</a></h3>
             info on this
         </li>
         <li class="zero">
-            <h3><a class="image" runat="server" href="~/Teen.aspx">Teens (Ages 13-17)</a></h3>
+            <h3><a runat="server" href="~/Teen.aspx">&nbsp Teens (Ages 13-17) &nbsp</a></h3>
             info on this
         </li>
         <li class="zero">
-            <h3><a class="image" runat="server" href="~/Adults.aspx">Adults (Ages 18 & Up)</a></h3>
+            <h3><a runat="server" href="~/Adults.aspx">&nbsp Adults &nbsp (Ages 18 & Up) &nbsp</a></h3>
             info on this
         </li>
         <li class="zero">
-            <h3><a class="image" runat="server" href="~/Vets.aspx">Veterans</a></h3>
+            <h3><a runat="server" href="~/Vets.aspx">&nbsp Veterans &nbsp</a></h3>
             info on this
         </li>
     </ol>

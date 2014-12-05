@@ -38,7 +38,7 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p class="site-title">
-                    <img width="250px" src ="Images/LWC_LOGO_color small.jpg" />
+                    <a runat="server" target="_blank"  href="http://www.laworks.net/"><img width="250px" src ="Images/LWC_LOGO_color small.jpg" /></a>
             </div>
             <br /><br /><br /><br /><br />
             <div class="float-right">
