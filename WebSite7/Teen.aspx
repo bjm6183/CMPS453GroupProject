@@ -38,13 +38,13 @@
 
             document.write("<li class='zero'>");
             document.write("<h3>" + Name[0].textContent.toString() + "</h3>");
-            document.write("<h5>Summary of Job:</h5>");
+            document.write("<h5>Summary of job:</h5>");
             document.write(summary[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h5>Education Requiered for this Job: </h5>");
+            document.write("<h5>Education requiered for this job: </h5>");
             document.write(edureq[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h5>Jobs Curently Avaliable In Louisiana: </h5>");
+            document.write("<h5>Number of jobs curently avaliable in louisiana: </h5>");
             document.write(jobsavail[0].textContent.toString());
             document.write("</li>");
         }
