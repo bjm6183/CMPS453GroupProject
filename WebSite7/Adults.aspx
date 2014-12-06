@@ -21,7 +21,7 @@
     <script language="JavaScript">
 
         var Connect = new XMLHttpRequest();
-        Connect.open("GET", "/scrapeddata.xml", false);
+        Connect.open("GET", "scrapeddata.xml", false);
         Connect.send(null);
         var TheDocument = Connect.responseXML;
         var Root = TheDocument.childNodes[0];

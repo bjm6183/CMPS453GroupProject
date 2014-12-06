@@ -21,13 +21,17 @@
    
 <script language="JavaScript">
 
-        var Connect = new XMLHttpRequest();
-        Connect.open("GET", "/scrapeddata.xml", false);
-        Connect.send(null);        
-        var TheDocument = Connect.responseXML;
-        var Root = TheDocument.childNodes[0];
+    var Connect = new XMLHttpRequest();
 
-        document.write(" <ol class='round'>");
+    Connect.open("GET", "scrapeddata.xml", false);
+
+    Connect.send(null);
+
+    var TheDocument = Connect.responseXML;
+
+    var Root = TheDocument.childNodes[0];
+
+        document.write("<ol class='round'>");
         for (var i = 0; i < Root.children.length; i++) {
 
             var Job = Root.children[i];
@@ -35,7 +39,6 @@
             var Name = Job.getElementsByTagName("name");
             var summary = Job.getElementsByTagName("summary");
             var jobsavail = Job.getElementsByTagName("jobs_avail");
-
             document.write("<li class='zero'>");
             document.write("<h3>" + Name[0].textContent.toString() + "</h3>");
             document.write("<h5>Summary of Job:</h5>");
