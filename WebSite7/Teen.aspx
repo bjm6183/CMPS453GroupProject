@@ -18,7 +18,7 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2>Jobs:</h2>
 
-    <script language="JavaScript">
+    <script type="text/JavaScript">
 
         var Connect = new XMLHttpRequest();
         Connect.open("GET", "scrapeddata.xml", false);

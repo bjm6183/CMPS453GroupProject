@@ -19,7 +19,34 @@
     <br />
     <h2>Jobs:</h2>
 
-    <script language="JavaScript">
+    <script type="text/JavaScript">
+        function toggleSupplyDemand() {
+            var supdem = document.getElementsById('supanddemand')
+            var displaySetting = supdem.style.display;
+            var supdemButton = document.getElementById('supdemButton');
+            if (displaySetting == 'block') {
+                supdem.style.display = 'none';
+                supdemButton.innerHTML = 'Show supply and demand';
+            }
+            else {
+                supdem.style.display = 'block';
+                supdemButton.innerHTML = 'Hide supply and demand';
+            }
+        }
+
+        function togglePlace() {
+            var place = document.getElementsById('place')
+            var displaySetting = place.style.display;
+            var placeButton = document.getElementById('placeButton');
+            if (displaySetting == 'block') {
+                place.style.display = 'none';
+                placeButton.innerHTML = 'Show Citys where jobs are avalable';
+            }
+            else {
+                place.style.display = 'block';
+                placeButton.innerHTML = 'Hide Citys where jobs are avalable';
+            }
+        }
 
         var Connect = new XMLHttpRequest();
         Connect.open("GET", "scrapeddata.xml", false);
@@ -70,32 +97,5 @@
         }
         document.write("</ol>");
 
-        function toggleSupplyDemand() {
-            var supdem = document.getElementsById('supanddemand')
-            var displaySetting = supdem.style.display;
-            var supdemButton = document.getElementById('supdemButton');
-            if (displaySetting == 'block') {
-                supdem.style.display = 'none';
-                supdemButton.innerHTML = 'Show supply and demand';
-            }
-            else {
-                supdem.style.display = 'block';
-                supdemButton.innerHTML = 'Hide supply and demand';
-            }
-        }
-
-        function togglePlace() {
-            var place = document.getElementsById('place')
-            var displaySetting = place.style.display;
-            var placeButton = document.getElementById('placeButton');
-            if (displaySetting == 'block') {
-                place.style.display = 'none';
-                placeButton.innerHTML = 'Show Citys where jobs are avalable';
-            }
-            else {
-                place.style.display = 'block';
-                placeButton.innerHTML = 'Hide Citys where jobs are avalable';
-            }
-        }
 </script>
 </asp:Content>

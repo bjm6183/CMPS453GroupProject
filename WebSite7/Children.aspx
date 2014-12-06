@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Children" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Children.aspx.cs" Inherits="Children" %>
 
+
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
     <section class="featured">
         <div class="content-wrapper">
@@ -16,10 +17,10 @@
 </asp:Content>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-
+   
     <h2>Jobs:</h2>
    
-<script language="JavaScript">
+<script type="text/JavaScript">
 
     var Connect = new XMLHttpRequest();
 

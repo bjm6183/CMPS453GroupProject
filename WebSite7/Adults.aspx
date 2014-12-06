@@ -17,13 +17,41 @@
 </asp:Content>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+
     <div style="text-align: center;" > <button style="text-align: center;" onclick="toggleSupplyDemand()" id="supdemButton">Hide supply and demand information</button>
     <button style="text-align: center;" onclick="togglePlace()" id="placeButton">Hide Citys where jobs are avalable</button></div>
     <br />
 
     <h1>Jobs:</h1>
 
-    <script language="JavaScript">
+    <script type="text/JavaScript">
+        function toggleSupplyDemand() {
+            var supdem = document.getElementsById('supanddemand')
+            var displaySetting = supdem.style.display;
+            var supdemButton = document.getElementById('supdemButton');
+            if (displaySetting == 'block') {
+                supdem.style.display = 'none';
+                supdemButton.innerHTML = 'Show supply and demand';
+            }
+            else {
+                supdem.style.display = 'block';
+                supdemButton.innerHTML = 'Hide supply and demand';
+            }
+        }
+
+        function togglePlace() {
+            var place = document.getElementsById('place')
+            var displaySetting = place.style.display;
+            var placeButton = document.getElementById('placeButton');
+            if (displaySetting == 'block') {
+                place.style.display = 'none';
+                placeButton.innerHTML = 'Show Citys where jobs are avalable';
+            }
+            else {
+                place.style.display = 'block';
+                placeButton.innerHTML = 'Hide Citys where jobs are avalable';
+            }
+        }
         var Connect = new XMLHttpRequest();
         Connect.open("GET", "scrapeddata.xml", false);
         Connect.send(null);
@@ -33,6 +61,7 @@
         document.write(" <ol class='round'>")
         for (var i = 0; i < Root.children.length; i++) {
 
+            
             var Job = Root.children[i];
             
             var Name = Job.getElementsByTagName("name");
@@ -76,32 +105,6 @@
         }
         document.write("</ol>");
 
-        function toggleSupplyDemand() {
-            var supdem = document.getElementsById('supanddemand')
-            var displaySetting = supdem.style.display;
-            var supdemButton = document.getElementById('supdemButton');
-            if (displaySetting == 'block') {
-                supdem.style.display = 'none';
-                supdemButton.innerHTML = 'Show supply and demand';
-            }
-            else {
-                supdem.style.display = 'block';
-                supdemButton.innerHTML = 'Hide supply and demand';
-            }
-        }
-
-        function togglePlace() {
-            var place = document.getElementsById('place')
-            var displaySetting = place.style.display;
-            var placeButton = document.getElementById('placeButton');
-            if (displaySetting == 'block') {
-                place.style.display = 'none';
-                placeButton.innerHTML = 'Show Citys where jobs are avalable';
-            }
-            else {
-                place.style.display = 'block';
-                placeButton.innerHTML = 'Hide Citys where jobs are avalable';
-            }
-        }
+        
 </script>
 </asp:Content>
