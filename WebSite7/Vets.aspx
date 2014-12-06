@@ -31,16 +31,23 @@
             // Access each of the data values.
             var Name = Job.getElementsByTagName("name");
             var summary = Job.getElementsByTagName("summary");
+            var jobsavail = Job.getElementsByTagName("jobs_avail");
             var ntnlsupplydemand = Job.getElementsByTagName("ntnl_supply_demand");
             var edureq = Job.getElementsByTagName("edu_req");
 
             document.write("<li class='zero'>");
             document.write("<h3>" + Name[0].textContent.toString() + "</h3>");
+            document.write("<h5>Summary of Job:</h5>");
             document.write(summary[0].textContent.toString());
             document.write("<br/>");
-            document.write(ntnlsupplydemand[0].textContent.toString());
+            document.write("<h5>Jobs Curently Avaliable In Louisiana: </h5>");
+            document.write(jobsavail[0].textContent.toString());
             document.write("<br/>");
+            document.write("<h5>Education Requiered for this Job: </h5>");
             document.write(edureq[0].textContent.toString());
+            document.write("<br/>");
+            document.write("<h5>Education Requiered for this Job: </h5>");
+            document.write(ntnlsupplydemand[0].textContent.toString());
             document.write("</li>");
         }
         document.write("</ol>");

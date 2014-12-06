@@ -26,8 +26,8 @@
         Connect.send(null);        
         var TheDocument = Connect.responseXML;
         var Root = TheDocument.childNodes[0];
-       
-        document.write(" <ol class='round'>")
+
+        document.write(" <ol class='round'>");
         for (var i = 0; i < Root.children.length; i++) {
 
             var Job = Root.children[i];
