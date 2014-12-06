@@ -41,11 +41,11 @@
             document.write("<h5>Summary of Job:</h5>");
             document.write(summary[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h5>Jobs Curently Avaliable In Louisiana: </h5>");
-            document.write(jobsavail[0].textContent.toString());
-            document.write("<br/>");
             document.write("<h5>Education Requiered for this Job: </h5>");
             document.write(edureq[0].textContent.toString());
+            document.write("<br/>");
+            document.write("<h5>Jobs Curently Avaliable In Louisiana: </h5>");
+            document.write(jobsavail[0].textContent.toString());
             document.write("</li>");
         }
         document.write("</ol>");
