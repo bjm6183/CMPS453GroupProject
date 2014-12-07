@@ -61,7 +61,9 @@
         <section class="content-wrapper main-content clear-fix">
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />
         </section>
+        <asp:ContentPlaceHolder runat="server" ID="buttons" />
     </div>
+        
     <footer>
         <div class="content-wrapper">
             <div class="float-left">

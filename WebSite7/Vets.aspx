@@ -8,6 +8,14 @@
         .place {
             display: none;
         }
+        .buttons{
+           position:fixed;
+           bottom:350px;
+           height:50px;
+           width: 200px;
+           text-align: center;
+           padding-left: 40px;
+        }
     </style>
     <section class="featured">
         <div class="content-wrapper">
@@ -20,12 +28,12 @@
         </div>
     </section>
 </asp:Content>
-
-<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-
-    <div style="text-align: center;" > <button type="button" style="text-align: center;" onclick="toggleSupplyDemand()" id="supdemButton">Show supply and demand information</button>
-    <button type="button" style="text-align: center;" onclick="togglePlace()" id="placeButton">Show Cities where jobs are avalable</button></div>
+<asp:Content runat="server" ID="buttons" ContentPlaceHolderID="buttons">
+    <div class="buttons" > <button type="button"  onclick="toggleSupplyDemand()" id="Button1">Show supply and demand information</button> <br/><br/>
+    <button type="button" style="text-align: center;" onclick="togglePlace()" id="Button2">Show Cities where jobs are avalable</button></div>
     <br />
+ </asp:Content>
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
     <h1>Jobs:</h1>
 
