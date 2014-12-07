@@ -7,7 +7,7 @@
             <hgroup class="title">
                 <h1>Children</h1>
                 <br />
-                <h2>(ages 6-12)</h2>           
+                <h2>(Ages 6-12)</h2>           
             </hgroup>
             <p>
                 Info on the page
@@ -18,7 +18,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
    
-    <h2>Jobs:</h2>
+    <h1>Jobs:</h1>
    
 <script type="text/JavaScript">
 
@@ -36,18 +36,19 @@
         for (var i = 0; i < Root.children.length; i++) {
 
             var Job = Root.children[i];
+
             // Access each of the data values.
             var Name = Job.getElementsByTagName("name");
             var summary = Job.getElementsByTagName("summary");
             var jobsavail = Job.getElementsByTagName("jobs_avail");
+
             document.write("<li class='zero'>");
-            document.write("<h3>" + Name[0].textContent.toString() + "</h3>");
-            document.write("<h5>Summary of job:</h5>");
+            document.write("<h2>" + Name[0].textContent.toString() + "</h2>");
+            document.write("<h3>Summary:</h3>");
             document.write(summary[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h5>Number of jobs curently avaliable in louisiana: </h5>");
-            document.write(jobsavail[0].textContent.toString());
-            document.write("</li>");
+            document.write("<h3>Number of Jobs Currently Available in Louisiana: " + "<span style='font-weight:normal; font-size:.9em'>" + jobsavail[0].textContent.toString() + "</span>" + "</h3>");
+            document.write("<br/>" + "<br/>" + "<br/>" + "</li>");
         }
         document.write("</ol>");
 </script>
