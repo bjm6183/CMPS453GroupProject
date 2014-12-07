@@ -1,7 +1,14 @@
 ﻿<%@ Page Title="Adults" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Adults.aspx.cs" Inherits="Adults" %>
 
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
-    
+    <style  type="text/css">
+        .supdem {
+            display: none;
+        }
+        .place {
+            display: block;
+        }
+    </style>
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
@@ -25,33 +32,7 @@
     <h1>Jobs:</h1>
 
     <script type="text/JavaScript">
-        function toggleSupplyDemand() {
-            var supdem = document.getElementsById('supanddemand')
-            var displaySetting = supdem.style.display;
-            var supdemButton = document.getElementById('supdemButton');
-            if (displaySetting == 'block') {
-                supdem.style.display = 'none';
-                supdemButton.innerHTML = 'Show supply and demand';
-            }
-            else {
-                supdem.style.display = 'block';
-                supdemButton.innerHTML = 'Hide supply and demand';
-            }
-        }
-
-        function togglePlace() {
-            var place = document.getElementsById('place')
-            var displaySetting = place.style.display;
-            var placeButton = document.getElementById('placeButton');
-            if (displaySetting == 'block') {
-                place.style.display = 'none';
-                placeButton.innerHTML = 'Show Citys where jobs are avalable';
-            }
-            else {
-                place.style.display = 'block';
-                placeButton.innerHTML = 'Hide Citys where jobs are avalable';
-            }
-        }
+       
         var Connect = new XMLHttpRequest();
         Connect.open("GET", "scrapeddata.xml", false);
         Connect.send(null);
@@ -85,7 +66,8 @@
             document.write("<h4>Total jobs curently avaliable in louisiana: </h4>");
             document.write(jobsavail[0].textContent.toString());
             document.write("<h4>Citys where jobs are curently avaliable in louisiana: </h4>");
-            document.write("<span id='place'>");
+
+            document.write("<div class='place'>");
 
             //for (var i = 0; i < 1; i++) {
             var placename = place[0].getElementsByTagName('placename');
@@ -96,15 +78,41 @@
             document.write("<br/>");
             //}
 
-            document.write("</span>");
-            document.write("<span id='supanddemand'><h4>Supply and demand information for this job: </h4>");
+            document.write("</div>");
+            document.write("<div class='supdem'><h4>Supply and demand information for this job: </h4>");
             document.write(ntnlsupplydemand[0].textContent.toString());
-            document.write("</span>");
+            document.write("</div>");
             document.write("<br/>");
             document.write("</li>");
         }
         document.write("</ol>");
+        function toggleSupplyDemand() {
+            var supdem = $('.supdem');
+            var displaySetting = supdem.style.display;
+            var supdemButton = document.getElementById('supdemButton');
+            if (displaySetting == 'block') {
+                supdem.style.display = 'none';
+                supdemButton.innerHTML = 'Show supply and demand';
+            }
+            else {
+                supdem.style.display = 'block';
+                supdemButton.innerHTML = 'Hide supply and demand';
+            }
+        }
 
+      function togglePlace() {
+            var place = document.getElementsById('place');
+            var displaySetting = place.style.display;
+            var placeButton = document.getElementById('placeButton');
+            if (displaySetting == 'block') {
+                place.style.display = 'none';
+                placeButton.innerHTML = 'Show Citys where jobs are avalable';
+            }
+            else {
+                place.style.display = 'block';
+                placeButton.innerHTML = 'Hide Citys where jobs are avalable';
+            }
+        }
         
 </script>
 </asp:Content>
