@@ -9,7 +9,9 @@
                 <h2>(ages 13-17)</h2>            
             </hgroup>
             <p>
-                Info on page
+                This page is for teens ages 13 to 17 that are interested in learning about the IT field, what jobs are offered, and what the education requirements are for that position.
+                <br/><br/>
+                (info that appeals to teens goes here)
             </p>
         </div>
     </section>

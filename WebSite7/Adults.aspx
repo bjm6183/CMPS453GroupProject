@@ -10,7 +10,7 @@
         }
         .buttons{
            position:fixed;
-           bottom:350px;
+           bottom:200px;
            height:50px;
            width: 200px;
            text-align: center;
@@ -25,7 +25,9 @@
                 <h2>(ages 18 & Up)</h2>                
             </hgroup>
             <p>
-                Info on page
+                This page is for adults ages 18 and up that are interested in learning about the IT field, what jobs are offered, what the education requirements are for that position, what cities currently have job openings, and the supply and demand for that position.
+                <br/><br/>
+                (info that appeals to adults goes here)
             </p>
         </div>
     </section>

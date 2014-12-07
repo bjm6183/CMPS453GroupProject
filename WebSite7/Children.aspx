@@ -10,7 +10,9 @@
                 <h2>(Ages 6-12)</h2>           
             </hgroup>
             <p>
-                Info on the page
+                This page is for children ages 6 to 12 that are interested in learning about the IT field and what jobs are offered.
+                <br/><br/>
+                (info that appeals to children goes here)
             </p>
         </div>
     </section>

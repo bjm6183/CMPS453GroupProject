@@ -10,7 +10,7 @@
         }
         .buttons{
            position:fixed;
-           bottom:350px;
+           bottom:200px;
            height:50px;
            width: 200px;
            text-align: center;
@@ -23,7 +23,9 @@
                 <h1>Veterans</h1>        
             </hgroup>
             <p>
-               Info on page
+               This page is for veterans that are interested in learning about the IT field, what jobs are offered, what the education requirements are for that position, what cities currently have job openings, and the supply and demand for that position.
+                <br/><br/>
+                (info that appeals to veterans goes here)
             </p>
         </div>
     </section>
