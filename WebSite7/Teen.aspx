@@ -6,19 +6,17 @@
             <hgroup class="title">
                 <h1>Teens</h1>
                 <br />
-                <h2>(ages 13-17)</h2>            
+                <h2>(Ages 13-17)</h2>            
             </hgroup>
             <p>
                 This page is for teens ages 13 to 17 that are interested in learning about the IT field, what jobs are offered, and what the education requirements are for that position.
-                <br/><br/>
-                (info that appeals to teens goes here)
             </p>
         </div>
     </section>
 </asp:Content>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2>Jobs:</h2>
+    <h1>Jobs:</h1>
 
     <script type="text/JavaScript">
 
@@ -39,16 +37,15 @@
             var edureq = Job.getElementsByTagName("edu_req");
 
             document.write("<li class='zero'>");
-            document.write("<h3>" + Name[0].textContent.toString() + "</h3>");
-            document.write("<h5>Summary of job:</h5>");
+            document.write("<h2>" + Name[0].textContent.toString() + "</h2>");
+            document.write("<h3>Summary:</h3>");
             document.write(summary[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h5>Education requiered for this job: </h5>");
+            document.write("<h3>Education Requirements: </h3>");
             document.write(edureq[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h5>Number of jobs curently avaliable in louisiana: </h5>");
-            document.write(jobsavail[0].textContent.toString());
-            document.write("</li>");
+            document.write("<h3>Number Of Jobs Openings In Louisiana: " + "<span style='font-weight:normal; font-size:.9em'>" + jobsavail[0].textContent.toString() + "</span>" + "</h3>");
+            document.write("<br/>" + "<br/>" + "<br/>" + "</li>");
         }
         document.write("</ol>");
 </script>

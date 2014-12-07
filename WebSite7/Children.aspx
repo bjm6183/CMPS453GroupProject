@@ -11,8 +11,6 @@
             </hgroup>
             <p>
                 This page is for children ages 6 to 12 that are interested in learning about the IT field and what jobs are offered.
-                <br/><br/>
-                (info that appeals to children goes here)
             </p>
         </div>
     </section>
@@ -42,14 +40,15 @@
             // Access each of the data values.
             var Name = Job.getElementsByTagName("name");
             var summary = Job.getElementsByTagName("summary");
-            var jobsavail = Job.getElementsByTagName("jobs_avail");
+            var edureq = Job.getElementsByTagName("edu_req");
 
             document.write("<li class='zero'>");
             document.write("<h2>" + Name[0].textContent.toString() + "</h2>");
             document.write("<h3>Summary:</h3>");
             document.write(summary[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h3>Number of Jobs Currently Available in Louisiana: " + "<span style='font-weight:normal; font-size:.9em'>" + jobsavail[0].textContent.toString() + "</span>" + "</h3>");
+            document.write("<h3>Education Requirements: </h3>");
+            document.write(edureq[0].textContent.toString());
             document.write("<br/>" + "<br/>" + "<br/>" + "</li>");
         }
         document.write("</ol>");

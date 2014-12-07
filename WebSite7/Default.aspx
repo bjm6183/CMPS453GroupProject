@@ -33,19 +33,19 @@
     <h2>Age Catagories:</h2>
     <ol class="round">
         <li class="zero">
-           <h3><a runat="server" href="~/Children.aspx">&nbsp Children (Ages 6-12) &nbsp</a></h3>
+            <h3><a runat="server" href="~/Children.aspx"> Children (Ages 6-12) </a></h3>
             This page is for children ages 6 to 12 that are interested in learning about the IT field and what jobs are offered.
         </li>
         <li class="zero">
-            <h3><a id="A1" runat="server" href="~/Teen.aspx">&nbsp Teens (Ages 13-17) &nbsp</a></h3>
+            <h3><a id="A1" runat="server" href="~/Teen.aspx"> Teens (Ages 13-17) </a></h3>
             This page is for teens ages 13 to 17 that are interested in learning about the IT field, what jobs are offered, and what the education requirements are for that position.
         </li>
         <li class="zero">
-            <h3><a id="A2" runat="server" href="~/Adults.aspx">&nbsp Adults &nbsp (Ages 18 & Up) &nbsp</a></h3>
+            <h3><a id="A2" runat="server" href="~/Adults.aspx"> Adults (Ages 18 & Up) </a></h3>
             This page is for adults ages 18 and up that are interested in learning about the IT field, what jobs are offered, what the education requirements are for that position, what cities currently have job openings, and the supply and demand for that position.
         </li>
         <li class="zero">
-            <h3><a id="A3" runat="server" href="~/Vets.aspx">&nbsp Veterans &nbsp</a></h3>
+            <h3><a id="A3" runat="server" href="~/Vets.aspx"> Veterans </a></h3>
             This page is for veterans that are interested in learning about the IT field, what jobs are offered, what the education requirements are for that position, what cities currently have job openings, and the supply and demand for that position.
         </li>
     </ol>

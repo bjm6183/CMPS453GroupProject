@@ -159,12 +159,12 @@ ul#menu {
 
         ul#menu li a {
             background: none;
-            color: #999;
+            color: #45555F;
             text-decoration: none;
         }
 
         ul#menu li a:hover {
-            color: #333;
+            color: #48A842;
             text-decoration: none;
         }
 
