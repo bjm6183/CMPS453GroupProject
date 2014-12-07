@@ -6,7 +6,7 @@
             display: none;
         }
         .place {
-            display: block;
+            display: none;
         }
     </style>
     <section class="featured">
@@ -25,8 +25,8 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-    <div style="text-align: center;" > <button style="text-align: center;" onclick="toggleSupplyDemand()" id="supdemButton">Hide supply and demand information</button>
-    <button style="text-align: center;" onclick="togglePlace()" id="placeButton">Hide Citys where jobs are avalable</button></div>
+    <div style="text-align: center;" > <button type="button" style="text-align: center;" onclick="toggleSupplyDemand()" id="supdemButton">Show supply and demand information</button>
+    <button type="button" style="text-align: center;" onclick="togglePlace()" id="placeButton">Show Cities where jobs are avalable</button></div>
     <br />
 
     <h1>Jobs:</h1>
@@ -38,8 +38,8 @@
         Connect.send(null);
         var TheDocument = Connect.responseXML;
         var Root = TheDocument.childNodes[0];
-
-        document.write(" <ol class='round'>")
+        
+        document.write(" <ol class='round'>");
         for (var i = 0; i < Root.children.length; i++) {
 
             
@@ -65,9 +65,8 @@
             document.write("<br/>");
             document.write("<h4>Total jobs curently avaliable in louisiana: </h4>");
             document.write(jobsavail[0].textContent.toString());
-            document.write("<h4>Citys where jobs are curently avaliable in louisiana: </h4>");
-
             document.write("<div class='place'>");
+            document.write("<h4>Cities where jobs are curently avaliable in louisiana: </h4>");
 
             //for (var i = 0; i < 1; i++) {
             var placename = place[0].getElementsByTagName('placename');
@@ -87,30 +86,32 @@
         }
         document.write("</ol>");
         function toggleSupplyDemand() {
-            var supdem = $('.supdem');
+            var cssRuleCode = document.all ? 'rules' : 'cssRules'; 
+            var supdem = document.styleSheets[1][cssRuleCode][0];
             var displaySetting = supdem.style.display;
             var supdemButton = document.getElementById('supdemButton');
             if (displaySetting == 'block') {
                 supdem.style.display = 'none';
-                supdemButton.innerHTML = 'Show supply and demand';
+                supdemButton.innerHTML = 'Show supply and demand information';
             }
             else {
                 supdem.style.display = 'block';
-                supdemButton.innerHTML = 'Hide supply and demand';
+                supdemButton.innerHTML = 'Hide supply and demand information';
             }
         }
 
-      function togglePlace() {
-            var place = document.getElementsById('place');
+        function togglePlace() {
+            var cssRuleCode = document.all ? 'rules' : 'cssRules'; 
+            var place = document.styleSheets[1][cssRuleCode][1];  
             var displaySetting = place.style.display;
             var placeButton = document.getElementById('placeButton');
             if (displaySetting == 'block') {
                 place.style.display = 'none';
-                placeButton.innerHTML = 'Show Citys where jobs are avalable';
+                placeButton.innerHTML = 'Show Cities where jobs are avalable';
             }
             else {
                 place.style.display = 'block';
-                placeButton.innerHTML = 'Hide Citys where jobs are avalable';
+                placeButton.innerHTML = 'Hide Cities where jobs are avalable';
             }
         }
         
