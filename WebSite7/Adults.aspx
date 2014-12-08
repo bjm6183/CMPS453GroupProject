@@ -12,9 +12,9 @@
            position:fixed;
            bottom:200px;
            height:100px;
-           width: 150px;
+           width: 100px;
            text-align: center;
-           padding-left: 40px;
+           padding-left: 20px;
         }
     </style>
     <section class="featured">
