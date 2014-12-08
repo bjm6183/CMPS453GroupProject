@@ -71,7 +71,7 @@
         <div >
             <div>
                 <p>
-                    &copy; <%: DateTime.Now.Year %> - LAWork - IT
+                    &copy; <%: DateTime.Now.Year %> - LAWorks - IT
                 </p>
             </div>
         </div>
