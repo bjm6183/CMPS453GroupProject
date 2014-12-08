@@ -65,8 +65,11 @@
     </div>
         
     <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
+        <br/>
+        <a style="font-size:1.3em"  target="_blank" href="http://www.laworks.net/" > Louisiana Workforce Commission  </a>
+        <br/>
+        <div >
+            <div>
                 <p>
                     &copy; <%: DateTime.Now.Year %> - LAWork - IT
                 </p>

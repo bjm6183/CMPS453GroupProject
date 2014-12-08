@@ -44,7 +44,7 @@
             document.write("<h3>Education Requirements: </h3>");
             document.write(edureq[0].textContent.toString());
             document.write("<br/>");
-            document.write("<h3>Number Of Jobs Openings In Louisiana: " + "<span style='font-weight:normal; font-size:.9em'>" + jobsavail[0].textContent.toString() + "</span>" + "</h3>");
+            document.write("<h3>Number Of Job Openings In Louisiana: " + "<span style='font-weight:normal; font-size:.9em'>" + jobsavail[0].textContent.toString() + "</span>" + "</h3>");
             document.write("<br/>" + "<br/>" + "<br/>" + "</li>");
         }
         document.write("</ol>");
